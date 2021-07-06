@@ -1,0 +1,94 @@
+html, body {
+    height:100%;
+}
+
+section {
+    position:absolute;
+    top:5%;
+    left:5%;
+    width:90%;
+    height:90%;
+}
+
+div {
+    position:absolute;
+    top:0;
+    left:0;
+    right:50%;
+    bottom:50%;
+    background-color:palevioletred;
+}
+
+div:nth-of-type(2) {
+    top:0;
+    left:50%;
+    right:0;
+    bottom:50%;
+    background-color:blue;
+}
+
+div:nth-of-type(3) {
+    top:50%;
+    left:0;
+    right:50%;
+    bottom:0;
+    background-color:green;
+}
+
+div:nth-of-type(4) {
+    top:50%;
+    left:50%;
+    right:0;
+    bottom:0;
+    background-color:gold;
+}
+
+#red_button{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: palevioletred;
+    position: absolute;
+}
+
+#blue_button{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: blue;
+    position: absolute;
+}
+
+#green_button{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: green;
+    position: absolute;
+}
+
+#gold_button{
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: gold;
+    position: absolute;
+}
+
+#enable_log_button{
+top:  50%;
+
+right: 50%;
+    position: absolute
+}
+
+#disable_log_button{
+    top: 95%;
+
+    right: 1%;
+    position: absolute
+}
