@@ -22,7 +22,7 @@ var logger = function()
 }();
 
 var myListner = webgazer.setGazeListener((data,  timestamp) => {
-    console.log(data,  timestamp)
+    console.log(data, timestamp)
 });
 
 logger.disableLogger();
@@ -41,10 +41,12 @@ function stoplog() {
     btn2 = document.getElementById("blue_button");
     btn3 = document.getElementById("green_button");
     btn4 = document.getElementById("gold_button");
+    btn5 = document.getElementById("white_button");
     btn1.disabled = 'disabled';
     btn2.disabled = 'disabled';
     btn3.disabled = 'disabled';
     btn4.disabled = 'disabled';
+    btn5.disabled = 'disabled';
 
     //logger.enableLogger();
     console.log("TEST END!!!")
@@ -63,10 +65,12 @@ function startlog() {
     btn2 = document.getElementById("blue_button");
     btn3 = document.getElementById("green_button");
     btn4 = document.getElementById("gold_button");
+    btn5 = document.getElementById("white_button");
     btn1.disabled = false;
     btn2.disabled = false;
     btn3.disabled = false;
     btn4.disabled = false;
+    btn5.disabled = false;
 
     //logger.enableLogger();
     console.log("TEST BEGIN!!!")
@@ -83,11 +87,11 @@ function red_button_click() {
     if (test_begin) { //start test
         logger.enableLogger();
         test_begin = false;
-        console.log("red button clicked\nx : 0px ~ 895px, y : 135px ~ 627px");
+        console.log("red area clicked");
 
     } else{
         test_begin = true;
-        console.log("red button test end");
+        console.log("red area test end");
         logger.disableLogger();
     }
 
@@ -97,11 +101,11 @@ function blue_button_click() {
     if (test_begin) { //start test
         logger.enableLogger();
         test_begin = false;
-        console.log("blue button clicked\nx : 895px ~ 1791px, y : 135px ~ 627px");
+        console.log("blue area test start");
 
     } else{
         test_begin = true;
-        console.log("blue button test end");
+        console.log("blue area test end");
         logger.disableLogger();
     }
 
@@ -111,11 +115,11 @@ function green_button_click() {
     if (test_begin) { //start test
         logger.enableLogger();
         test_begin = false;
-        console.log("green button clicked\nx : 0px ~ 895px, y : 627px ~ 1119px");
+        console.log("green area test start");
 
     }else{
         test_begin = true;
-        console.log("green button test end");
+        console.log("green area test end");
         logger.disableLogger();
     }
 
@@ -125,12 +129,26 @@ function gold_button_click() {
     if (test_begin) { //start test
         logger.enableLogger();
         test_begin=false;
-        console.log("gold button clicked\nx : 895px ~ 1791px, y : 627 ~ 1119px");
+        console.log("gold area test start");
 
     }
     else{
         test_begin = true;
-        console.log("gold button test end");
+        console.log("gold area test end");
+        logger.disableLogger();
+    }
+}
+
+function white_button_click() {
+    if (test_begin) { //start test
+        logger.enableLogger();
+        test_begin=false;
+        console.log("white area test start");
+
+    }
+    else{
+        test_begin = true;
+        console.log("white area test end");
         logger.disableLogger();
     }
 }
