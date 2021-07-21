@@ -1,0 +1,395 @@
+body {
+    min-width:600px!important;
+}
+
+button {
+    border-radius: 4px;
+}
+/* Video Feed Styling */
+#overlay {
+/* Video Feed Styling:
+ * Include the !important keyword to override default styles applied by JS.
+ * webgazer.js sets defaults for: display, position, top, left, width, height
+ */
+}
+#webgazerVideoContainer {
+    display: block !important; 
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 320px !important;
+    height: 240px !important;
+    z-index: 1;
+}
+
+/* Navbar styling */
+#webgazerNavbar {
+    left: 320px;
+    z-index: 0;
+    box-shadow: 0px 3px 5px #ddd;
+    border:0px;
+    background-color: #fff;
+}
+
+#Accuracy a{
+    background-color: #222;
+    color: #eee;
+    left: -15px;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+#Accuracy {
+    background-color: #222;
+    padding-left: inherit;
+}
+
+li {
+    padding-left: 50px;
+}
+.navbar-right li {
+    padding-right: 20px;
+}
+
+.helpBtn {
+    padding: 15px;
+    border: none;
+    background: none;
+    color: #777;
+}
+.helpBtn a {
+    background: none;
+    color: #777;
+}
+.helpBtn a:hover {
+    color: black!important;
+    text-decoration: none;
+}
+.modal-header {
+    border-bottom: none!important;
+}
+
+/* Calibration button styling */
+.Calibration{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: red;
+    opacity: 0.2;
+    border-color: black;
+    border-style: solid;
+    position:fixed;
+}
+
+/* Calibration point position */
+#Pt1{
+    top: 70px;
+    left:340px;
+}
+#Pt2{
+    top: 70px;
+    left:50vw;
+    /* margin-left: 340; */
+}
+#Pt3{
+    top: 70px;
+    right:2vw;
+}
+#Pt4{
+    top:50vh;
+    left:2vw;
+}
+#Pt5{
+    top: 50vh;
+    left: 50vw;
+}
+#Pt6{
+    top: 50vh;
+    right:2vw;
+}
+#Pt7{
+    bottom:2vw;
+    left: 2vw;
+}
+#Pt8{
+    bottom:2vw;
+    left:50vw;
+}
+#Pt9{
+    bottom:2vw;
+    right:2vw;
+}
+
+#Pt10{
+    top: 50vh;
+    left: 25vw;
+}
+
+#Pt11{
+    top: 50vh;
+    right: 25vw;
+}
+
+#Pt12{
+    bottom: 2vw;
+    left: 25vw;
+}
+
+#Pt13{
+    bottom: 2vw;
+    right: 25vw;
+}
+
+#Pt14{
+    top: 70px;
+    right: 25vw;
+}
+
+#Pt15{
+    top: 30vh;
+    right: 12vw;
+}
+
+#Pt16{
+    top: 30vh;
+    right: 37vw;
+}
+#Pt17{
+    top: 30vh;
+    right: 62vw;
+}
+#Pt18{
+    bottom: 25vh;
+    left: 12vw;
+}
+#Pt19{
+    bottom: 25vh;
+    left: 37vw;
+}
+#Pt20{
+    bottom: 25vh;
+    right: 37vw;
+}
+#Pt21{
+    bottom: 25vh;
+    right: 12vw;
+}
+#Pt22{
+    top: 30vh;
+    left: 12vw;
+}
+
+#Pt23{
+    top: 30vh;
+    left: 2vw;
+}
+#Pt24{
+    top: 30vh;
+    left: 25vw;
+}
+#Pt25{
+    top: 30vh;
+    left: 50vw;
+}
+#Pt26{
+    top: 30vh;
+    right: 25vw;
+}
+#Pt27{
+    top: 30vh;
+    right: 2vw;
+}
+#Pt28{
+    top:50vh;
+    left: 12vw;
+}
+#Pt29{
+    top: 50vh;
+    left: 37vw;
+}
+
+#Pt31{
+    top: 50vh;
+    left: 62vw;
+}
+#Pt32{
+    top: 50vh;
+    right: 12vw;
+}
+#Pt33{
+    bottom: 25vh;
+    left: 2vw;
+}
+#Pt34{
+    bottom: 25vh;
+    left: 25vw;
+}
+#Pt35{
+    bottom: 25vh;
+    left: 50vw;
+}
+#Pt36{
+    bottom: 25vh;
+    right: 25vw;
+}
+#Pt37{
+    bottom: 25vh;
+    right: 2vw;
+}
+#Pt38{
+    bottom: 2vw;
+    left: 12vw;
+}
+#Pt39{
+    bottom: 2vw;
+    left: 37vw;
+}
+#Pt40{
+    bottom: 2vw;
+    right: 37vw;
+}
+#Pt41{
+    bottom: 2vw;
+    right: 12vw;
+}
+#Pt42{
+    top: 70px;
+    right: 12vw;
+}
+#Pt43{
+    top: 70px;
+    right: 37vw;
+}
+#Pt44{
+    top: 70px;
+    left: 37vw;
+}
+
+
+
+#Pt45{
+    top: 18vh;
+    right: 7vw;
+}
+#Pt46{
+    top: 18vh;
+    right: 18vw;
+}
+#Pt47{
+    top: 18vh;
+    right: 31vw;
+}
+#Pt48{
+    top: 18vh;
+    right: 43vw;
+}
+#Pt49{
+    top: 18vh;
+    right: 55vw;
+}
+#Pt50{
+    top: 18vh;
+    right: 68vw;
+}
+#Pt51{
+    top: 18vh;
+    right: 79vw;
+}
+#Pt52{
+    top: 40vh;
+    right: 7vw;
+}
+
+#Pt53{
+    top: 40vh;
+    right: 18vw;
+}
+#Pt54{
+    top: 40vh;
+    right: 31vw;
+}
+#Pt55{
+    top: 40vh;
+    right: 43vw;
+}
+#Pt56{
+    top: 40vh;
+    right: 55vw;
+}
+#Pt57{
+    top: 40vh;
+    right: 68vw;
+}
+#Pt58{
+    top: 40vh;
+    right: 80vw;
+}
+#Pt59{
+    top: 40vh;
+    right: 92vw;
+}
+#Pt60{
+    bottom: 37vh;
+    right: 7vw;
+}
+#Pt61{
+    bottom: 37vh;
+    right: 18vw;
+}
+#Pt62{
+    bottom: 37vh;
+    right: 31vw;
+}
+#Pt63{
+    bottom: 37vh;
+    right: 43vw;
+}
+#Pt64{
+    bottom: 37vh;
+    right: 55vw;
+}
+#Pt65{
+    bottom: 37vh;
+    right: 68vw;
+}
+#Pt66{
+    bottom: 37vh;
+    right: 80vw;
+}
+#Pt67{
+    bottom: 37vh;
+    right: 92vw;
+}
+#Pt68{
+    bottom: 14vh;
+    right: 7vw;
+}
+#Pt69{
+    bottom: 14vh;
+    right: 18vw;
+}
+#Pt70{
+    bottom: 14vh;
+    right: 31vw;
+}
+#Pt71{
+    bottom: 14vh;
+    right: 43vw;
+}
+#Pt72{
+    bottom: 14vh;
+    right: 55vw;
+}
+#Pt73{
+    bottom: 14vh;
+    right: 68vw;
+}
+#Pt74{
+    bottom: 14vh;
+    right: 80vw;
+}
+#Pt75{
+    bottom: 14vh;
+    right: 92vw;
+}

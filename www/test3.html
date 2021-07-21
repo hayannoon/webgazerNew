@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta nwme="viewport"
+          content = "width-device-width, initial-scale-1.0">
+    <script src="webgazer.js?" defer></script>
+    <script src="test1.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="test1.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+
+<section>
+    <div>
+    </div>
+    <div>
+        <h2>분할된 16개의 영역을 각각 응시하면서, 정확도가 많이 떨어지는 영역이 있다면, 그 영역 내부를 응시하면서 영역 내부 공간들을 클릭해주세요.<br><br> 어느정도 확인이 되었다면, 우측 하단의 S 버튼을 클릭한 뒤 회의에 참여해주세요.</h2>
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<button id="enable_log_button" onclick="startlog()">start log</button>
+<button id="disable_log_button" onclick="stoplog()">stop log</button>
+<!--
+<button id="change_dot_color" onclick="change_dot_color();playSound()">change dot color</button>
+-->
+<button id="getsize_button" onclick="get_position_of_mousePointer();colorChange(this.id)">S</button>
+<audio id="audio" src="./alert.mp3" autoplay="false" ></audio>
+<script>
+    function playSound() {
+        var sound = document.getElementById("audio");
+        sound.play();
+    }
+</script>
+
+</body>
+</html>

@@ -1,3 +1,6 @@
+var myListner = webgazer.setGazeListener((data,  timestamp) => {
+    console.log(data, timestamp)
+});
 
 var logger = function()
 {
@@ -21,9 +24,7 @@ var logger = function()
     return pub;
 }();
 
-var myListner = webgazer.setGazeListener((data,  timestamp) => {
-    console.log(data, timestamp)
-});
+
 
 logger.disableLogger();
 
@@ -151,4 +152,15 @@ function white_button_click() {
         console.log("white area test end");
         logger.disableLogger();
     }
+}
+
+function change_dot_color() {
+    var gazeDot = document.getElementById("webgazerGazeDot");
+
+    if (gazeDot.style.background == 'black'){
+        gazeDot.style.background = '#00ff0000';
+    } else{
+        gazeDot.style.background = 'black';
+    }
+
 }
