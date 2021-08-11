@@ -1,5 +1,10 @@
+
+
 var myListner = webgazer.setGazeListener((data,  timestamp) => {
     console.log(data, timestamp)
+
+
+
 });
 
 var logger = function()

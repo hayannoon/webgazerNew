@@ -1,11 +1,6 @@
 var i = 0;
 webgazer.setGazeListener((data) =>{
     //console.log(data,  timestamp)
-   /*
-    if (data != null){
-        console.log("x : " + data.x + ", y : " + data.y);
-    }
-    */
 
     if (data != null){
         if (i%20 == 0) {
@@ -84,6 +79,10 @@ function get_position_of_mousePointer ( event ) {
     }
     console.log( " -> x position : " + x + ", y position : " + y);
     //return { positionX : x, positionY : y };
+
+
+
+    document.onkeydown = noEvent;
 }
 function colorChange(id) {
 
@@ -97,3 +96,15 @@ function colorChange(id) {
     }
 
 }
+function noEvent() {
+    if (event.keyCode == 116) {
+        event.keyCode= 2;
+        return false;
+    }
+    else if(event.ctrlKey && (event.keyCode==78 || event.keyCode == 82))
+    {
+        return false;
+    }
+}
+
+

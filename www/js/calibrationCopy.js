@@ -17,7 +17,7 @@ function PopUpInstruction(){
   ClearCanvas();
   swal({
     title:"Calibration",
-    text: "Please click on each of the 9 points on the screen. You must click on each point 5 times till it goes yellow. This will calibrate your eye movements.",
+    text: "Please click on each of the 72 points on the screen. You must click on each point 5 times till it goes yellow. This will calibrate your eye movements.",
     buttons:{
       cancel: false,
       confirm: true
@@ -50,7 +50,7 @@ $(document).ready(function(){
         CalibrationPoints[id]=0;
       }
       CalibrationPoints[id]++; // increments values
-
+        console.log(CalibrationPoints[id]);
       if (CalibrationPoints[id]==5){ //only turn to yellow after 5 clicks
         $(this).css('background-color','yellow');
         $(this).prop('disabled', true); //disables the button
@@ -106,7 +106,7 @@ $(document).ready(function(){
                           if (isConfirm){
                             //clear the calibration & hide the last middle button
                             ClearCanvas();
-                            location.href="../test3.html";
+                            location.href="../test3copy.html";
                           } else {
                             //use restart function to restart the calibration
                             document.getElementById("Accuracy").innerHTML = "<a>Not yet Calibrated</a>";
@@ -149,3 +149,4 @@ function ClearCalibration(){
 function sleep (time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
+
